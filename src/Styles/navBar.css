@@ -1,0 +1,28 @@
+ body {
+	margin: 0;
+	padding: 0;
+}
+* {
+	font-family: 'Righteous', cursive;
+}
+.nav-bar {
+  height: 60px;
+  background: #262626;
+}
+
+.nav-container {
+  /* max-width: 1000px; */
+  /* margin: 0 auto; */
+}
+
+.nav-icons{
+    height: 30px;
+    width: 30px;
+    padding: 0 20px 10px 0;
+}
+
+.icons-container{
+    display: flex;
+    flex-direction: row;
+    float: right;
+}

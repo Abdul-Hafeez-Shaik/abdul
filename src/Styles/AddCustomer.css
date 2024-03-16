@@ -1,0 +1,202 @@
+.add-customer-main-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.add-customer-sub-container{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #57aede;
+  border-radius: 6px;
+  padding: 0 0 20px 0;
+}
+.add-customer-subs{
+  display: flex;
+  flex-direction: row;
+}
+
+.add-customer-top-bar{
+  display: flex;
+  flex-direction: row;
+  background-color: #2b7eaa;
+  height: 30px;
+  width: auto;
+  align-items: center;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+}
+.add-customer-heading{
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  padding: 0 0 0 30px;
+}
+.add-customer-sub{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 20px 0 0 30px;
+}
+.add-customer-icons{
+  height: 30px;
+  width: 30px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  border-right: none;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  background-color: #c2bebe;
+  /* margin: 20px 0 0 30px; */
+  padding: 2px;
+}
+.add-customer-birthday{
+  height: 30px;
+  width: 30px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  border-right: none;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  background-color: #c2bebe;
+  margin: 20px 0 0 0;
+  padding: 2px;
+}
+.add-customer-search-input{
+  width: 80%;
+  height: 30px;
+  border: 1px solid #000;
+  border-left: none;
+  /* margin: 20px 0 0 0; */
+  padding: 2px 2px 2px 20px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.add-customer-search-input:focus{
+  outline: none !important;
+  border-color: #719ECE;
+  box-shadow: 0 0 10px #719ECE;
+}
+.add-customer-code-heading{
+  font-size: 18px;
+  font-weight: 400;
+  margin: 20px 0 -10px 30px;
+  color: #9e9595;
+}
+.star{
+  color: red;
+  font-size: 20px;
+  font-weight: 200;
+  margin: 0 0 0 8px;
+}
+.add-customer-select{
+  height: 36px;
+  width: 120px;
+  border: 1px solid #000;
+  font-size: 14px;
+  font-weight: 300;
+  padding: 2px;
+}
+.add-customer-select:focus{
+  outline: none !important;
+  border-color: #719ECE;
+  box-shadow: 0 0 10px #719ECE;
+}
+.add-customer-name-input{
+  width: 62%;
+  height: 30px;
+  border: 1px solid #000;
+  border-left: none;
+  padding: 2px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.add-customer-name-input:focus{
+  outline: none !important;
+  border-color: #719ECE;
+  box-shadow: 0 0 10px #719ECE;
+}
+.add-customer-text-area{
+  padding: 10px;
+  border: 1px solid #9e9595;
+  margin: 0 20px 0 0;
+  border-radius: 3px;
+  width: 89%;
+
+}
+.add-customer-text-area:focus{
+  outline: none !important;
+  border-color: #719ECE;
+  box-shadow: 0 0 10px #719ECE;
+}
+.add-customer-label{
+  background-color: #c2bebe;
+  border: none;
+  height: 24px;
+  width: 50px;
+  padding: 10px 0 0 10px;
+  font-size: 12px;
+  font-weight: bold;
+  border: 1px solid #000;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-right: none;
+}
+.add-customer-label2{
+  background-color: #c2bebe;
+  border: none;
+  height: 24px;
+  width: 100px;
+  padding: 10px 0 0 10px;
+  font-size: 12px;
+  font-weight: bold;
+  border: 1px solid #000;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-right: none;
+}
+.add-customer-state-select{
+  height: 36px;
+  width: 180px;
+  border: 1px solid #000;
+  font-size: 14px;
+  font-weight: 300;
+  padding: 2px;
+  margin: 0 20px 0 0;
+}
+.add-customer-state-select:focus{
+  outline: none !important;
+  border-color: #719ECE;
+  box-shadow: 0 0 10px #719ECE;
+}
+.add-customer-pincode-input{
+  width: 160px;
+  height: 34px;
+  border: 1px solid #000;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  padding: 0 0 0 10px;
+}
+.add-customer-pincode-input:focus{
+  outline: none !important;
+  border-color: #719ECE;
+  box-shadow: 0 0 10px #719ECE;
+}
+.add-customer-dividing-container{
+  display: flex;
+  flex-direction: row;
+}
+.add-customer-birthday-input{
+  width: 200px;
+  height: 30px;
+  border: 1px solid #000;
+  /* border-left: none; */
+  padding: 2px 2px 2px 10px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.add-customer-birthday-input:focus{
+  outline: none !important;
+  border-color: #719ECE;
+  box-shadow: 0 0 10px #719ECE;
+}

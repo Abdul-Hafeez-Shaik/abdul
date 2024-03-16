@@ -1,0 +1,123 @@
+.home-main-container{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  background-color: #e6e9ed;
+  background-size: cover;
+  height: 90vh;
+}
+.home-sub-head-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  padding: 40px 10px 40px 10px;
+  width: 700px;
+  height: auto;
+  margin: 120px 0 0 0;
+}
+.home-text-radio-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 10px 0;
+}
+.home-radio-icon{
+  width: 15px;
+  height: 15px;
+  border: none;
+  margin: 0 4px 0 0;
+}
+.home-text{
+  font-size: 14px;
+  font-weight: bold;
+  /* padding: 10px; */
+  
+}
+.home-sub-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 10px 0 0 0;
+}
+.home-search-icon{
+  width: 30px;
+  height: 30px;
+  padding: 4px;
+  border: 1px solid #000;
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+  border-right: none;
+
+}
+/* .home-select-container{
+  width: 80px;
+} */
+.home-select{
+  width: 160px;
+  height: 40px;
+  border: 1px solid #000;
+  /* font-size: 24px; */
+  font-family: "Roboto";
+  font-weight: 300;
+}
+.home-select:focus{
+  /* border: 2px solid #88daeb; */
+  outline: none !important;
+  border-color: #719ECE;
+  box-shadow: 0 0 10px #719ECE;
+}
+/* .home-search-container{
+  display: flex;
+  flex-direction: row;
+} */
+.home-search-input{
+  width: 290px;
+  height: 36px;
+  border: 1px solid #000;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-left: none;
+  /* margin: 0 0 0 20px; */
+}
+.home-search-input:focus{
+  outline: none !important;
+  border-color: #719ECE;
+  box-shadow: 0 0 10px #719ECE;
+}
+.home-buttons-container{
+  display: flex;
+  flex-direction: row;
+  /* align-items: center; */
+  justify-content: center;
+  cursor: pointer;
+}
+.home-button-container{
+  width: auto;
+  height: 20px;
+  background-color: #4b4b52;
+  margin: 30px 30px 0 30px;
+  color: #fff;
+  padding: 10px;
+  border-radius: 2px;
+}
+.home-button{
+  background-color: #4b4b52;
+  border: none;
+  font-size: 20px;
+  color: #fff;
+  margin: 0 4px 0 0;
+  cursor: pointer;
+}
+.home-button-icon{
+  height: 20px;
+  width: 20px;
+  border: none;
+  cursor: pointer;
+}

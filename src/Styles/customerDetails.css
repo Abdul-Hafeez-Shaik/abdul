@@ -1,0 +1,103 @@
+.cd-main-container{
+  display: flex;
+  flex-direction: column;
+  /* height: 100vh; */
+  /* background-size: cover; */
+}
+.cd-nav-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 60px;
+  background-color: #fff;
+  border-bottom: 1px solid #dee3e7;
+  width: 100%;
+}
+.cd-heading{
+  font-size: 24px;
+  font-weight: 600;
+  align-self: center;
+  margin: 0 0 0 20px;
+}
+.cd-subs{
+  display: flex;
+  flex-direction: row;
+}
+.cd-subContainers{
+  display: flex;
+  flex-direction: row;
+  background-color: #f7f7f8;
+  height: 80vh;
+  width: 40%;
+  border: 1px solid #dee3e7;
+  border-left: none;
+  border-top: none;
+}
+.cd-subContainers2{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+  grid-gap: 10px;
+  background-color: #f7f7f8;
+  height: 80vh;
+  width: 60%;
+  border: 1px solid #dee3e7;
+  border-left: none;
+  border-top: none;
+}
+.cd-sub{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  width: 60%;
+  height: 350px;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 50px 0 0 100px;
+}
+.cd-name-circle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  font-size: 40px;
+  background-color: #cde4ff;
+  border-radius: 50%;
+  font-weight: 700;
+  color: blue;
+}
+.cd-name{
+  font-size: 26px;
+  font-weight: bold;
+  color: #000;
+  margin: 10px 0 0 0;
+}
+.cd-credits{
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+  margin: 10px 0 0 0;
+}
+.cd-text{
+  font-size: 18px;
+  margin: 10px 0 0 0;
+  font-weight: 200;
+}
+.cd-sub-cards{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px; /* Adjust height as needed */
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 50px 0 0 10px;
+}
+.cd-edit-btn{
+  color: #101928;
+    background: white;
+    text-transform: uppercase;
+    border: 1px solid #eef0f2;
+}

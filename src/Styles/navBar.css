@@ -1,23 +1,37 @@
 .nav-bar {
-  height: 70px;
+  height: auto;
   background: #262626;
   overflow: visible;
+  padding: 8px;
 }
 
 .nav-container {
-  /* max-width: 1000px; */
-  /* margin: 0 auto; */
+  display: flex;
+  flex-direction: row;
 }
 .icons-container{
   display: flex;
   flex-direction: row;
   align-items: center;
   float: right;
+  margin-left: auto;
 }
 .nav-icons{
-  height: 40px;
-  width: 40px;
+  height: 35px;
+  width: 35px;
   /* padding: 0 30px 10px 0; */
   margin: 0 30px 0 0;
   cursor: pointer;
+}
+.icons-names{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.icon-name{
+  font-size: 14px;
+  font-weight: 400;
+  color: #808080;
+  margin: 2px 30px 0 0;
 }

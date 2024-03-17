@@ -130,7 +130,8 @@ function AddCustomer() {
                 <div className='add-customer-sub'>
                     <label htmlFor="state" className='add-customer-label'>State</label>
                     <select className='add-customer-state-select' value={state} onChange={handleStateChange}>
-                      <option value="0"></option>
+                      {/* <option value="0"></option> */}
+                      <option value="35">Telangana</option>
                       <option value="29">Andaman and Nicobar Islands</option>
                       <option value="1">Andhra Pradesh</option>
                       <option value="2">Arunachal Pradesh</option>
@@ -162,7 +163,6 @@ function AddCustomer() {
                       <option value="22">Rajasthan</option>
                       <option value="23">Sikkim</option>
                       <option value="24">Tamil Nadu</option>
-                      <option value="35">Telangana</option>
                       <option value="25">Tripura</option>
                       <option value="27">Uttar Pradesh</option>
                       <option value="26">Uttarakhand</option>
@@ -195,18 +195,18 @@ function AddCustomer() {
                     <input className='add-customer-state-select' style={{height: '30px'}} type="date" placeholder='BirthDay' value={birthday}
                       onChange={handleBirthdayChange} />
                   </div>
-                  <div className='add-customer-sub' style={{marginLeft: '5px'}}>
-                    <label style={{width: '80px'}} className='add-customer-label2' value={preference} onChange={handlePreferenceChange}>Preference</label>
-                    <select className='add-customer-state-select' style={{width: '160px'}}>
-                      <option value="None" key="None">None</option>
-                      <option value="Suit Shirt on hanger" key="Suit Shirt on hanger">Suit Shirt on hanger</option>
-                      <option value="Medium Starch" key="medium starch">Medium Starch</option>
-                      <option value="Hard Starch" key="hard starch">Hard Starch</option>
-                      <option value="Light Starch" key="light starch">Light Starch</option>
-                      <option value="No Starch" key="no starch">No Starch</option>
-                      <option value="Flat Pressing" key="flat pressing">Flat Pressing</option>
-                    </select>
-                    </div>
+                    {/* <div className='add-customer-sub' style={{marginLeft: '5px'}}>
+                      <label style={{width: '80px'}} className='add-customer-label2' value={preference} onChange={handlePreferenceChange}>Preference</label>
+                      <select className='add-customer-state-select' style={{width: '160px'}}>
+                        <option value="None" key="None">None</option>
+                        <option value="Suit Shirt on hanger" key="Suit Shirt on hanger">Suit Shirt on hanger</option>
+                        <option value="Medium Starch" key="medium starch">Medium Starch</option>
+                        <option value="Hard Starch" key="hard starch">Hard Starch</option>
+                        <option value="Light Starch" key="light starch">Light Starch</option>
+                        <option value="No Starch" key="no starch">No Starch</option>
+                        <option value="Flat Pressing" key="flat pressing">Flat Pressing</option>
+                      </select>
+                    </div> */}
                 </div>
                 <div className='add-customer-sub'>
                   <label className='add-customer-label2'>Home Delivery</label>
@@ -214,6 +214,9 @@ function AddCustomer() {
                     <option value="Yes" key="Yes">Yes</option>
                     <option value="No" key="No">No</option>
                   </select>
+                </div>
+                <div className='add-customer-sub'>
+                  <button className='add-cus-save-btn'>Save</button>
                 </div>
               </div>
               <div>

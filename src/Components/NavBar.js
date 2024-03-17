@@ -16,17 +16,29 @@ const Navbar = () => {
   }
   return (
     <div className='nav-bar'>
-        <div className='nav-container'>
-            <div>
-                <img src="" alt="" />
-            </div>
-            <div className='icons-container'>
-                <img onClick={goToHome} className='nav-icons' src={HomeIcon} alt="" />
-                <img className='nav-icons' src={dashboardIcon} alt="" />
-                <img className='nav-icons' src={reportsIcon} alt="" />
-                <img onClick={goToAddCustomer} className='nav-icons' src={userIcon} alt="" />
-            </div>
+      <div className='nav-container'>
+        {/* <div>
+            <img src="" alt="" />
+        </div> */}
+        <div className='icons-container'>
+          <div className='icons-names'>
+            <img onClick={goToHome} className='nav-icons' src={HomeIcon} alt="" />
+            <p className='icon-name'>Home</p>
+          </div>
+          <div className='icons-names'>
+            <img className='nav-icons' src={dashboardIcon} alt="" />
+            <p className='icon-name'>Dashboard</p>
+          </div>
+          <div className='icons-names'>
+            <img className='nav-icons' src={reportsIcon} alt="" />
+            <p className='icon-name'>Reports</p>
+          </div>
+          <div className='icons-names'>
+            <img onClick={goToAddCustomer} className='nav-icons' src={userIcon} alt="" />
+            <p className='icon-name'>Profile</p>
+          </div>
         </div>
+      </div>
     </div>
   );
 };

@@ -84,8 +84,8 @@ function CustomerDetails() {
           <button className='cd-edit-btn'>Pending Orders / Payments</button>
         </div>
         <div className='cd-buttons'>
-          <button className='cd-edit-btn'>Create Order Per Piece</button>
-          <button className='cd-edit-btn'>Create Order Per Weight</button>
+          <button className='cd-create-btn'>Create Order Per Piece</button>
+          <button className='cd-create-btn'>Create Order Per Weight</button>
         </div>
       </div>
     </div>

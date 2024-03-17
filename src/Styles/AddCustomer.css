@@ -176,6 +176,7 @@
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
   padding: 0 0 0 10px;
+  margin: 0 20px 0 0;
 }
 .add-customer-pincode-input:focus{
   outline: none !important;
@@ -199,4 +200,20 @@
   outline: none !important;
   border-color: #719ECE;
   box-shadow: 0 0 10px #719ECE;
+}
+.add-cus-save-btn{
+  color: #101928;
+  background-color: white;
+  text-transform: uppercase;
+  border: 1px solid #eef0f2;
+  height: 50px;
+  width: 160px;
+  padding: 10px;
+  margin: 10px 0 0 0;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  transition: transform 0.3s ease;
+}
+.add-cus-save-btn:hover{
+  transform: translateY(-4px);
 }

@@ -7,6 +7,7 @@ import SignUp from './Components/Signup';
 import AddCustomer from './Components/AddCustomer';
 import Navbar from './Components/NavBar';
 import CustomerDetails from './Components/CustomerDetails';
+import CreateOrderPerWeight from './Components/CreateOrders/CreateOrderPerWeight';
 
 const App = () => {
     const routes = useRoutes([
@@ -15,6 +16,7 @@ const App = () => {
       {path: "/signup", element: <SignUp />},
       {path: "/addCustomer", element: <AddCustomer />},
       {path: "/customerDetails", element: <CustomerDetails />},
+      {path: "/createOrderPerWeight", element: <CreateOrderPerWeight />},
     ])
     return routes
 }

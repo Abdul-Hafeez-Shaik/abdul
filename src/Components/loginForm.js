@@ -19,8 +19,11 @@ import bgImg from '../Assets/Images/LoginBkgImg.png'
 import '../Styles/login.css'
 import {NotificationContainer, NotificationManager} from 'react-notifications';
 import 'react-notifications/lib/notifications.css';
+import axios from 'axios'
 
 function Copyright(props) {
+  // const [userId, setUserId] = useState('');
+  // const [password, setPassword] = useState('');
   return (
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
       {'Copyright © '}
@@ -36,14 +39,20 @@ function Copyright(props) {
 const defaultTheme = createTheme();
 
 export default function SignIn() {
+  const [userName, setUserName] = React.useState('');
+  const [password, setPassword] = React.useState('');
   const [showPassword, setShowPassword] = React.useState(false);
   const [formErrors, setFormErrors] = React.useState({});
 
   const handleSubmit = (event) => {
     event.preventDefault();
+
     const data = new FormData(event.currentTarget);
     const email = data.get('userName');
     const password = data.get('password');
+
+    setUserName(email);
+    setPassword(password);
 
     const errors = {};
 
@@ -58,12 +67,27 @@ export default function SignIn() {
 
     if (Object.keys(errors).length === 0) {
       NotificationManager.success('Success', 'Login Success', 5000);
+      login();
       console.log({
         email: email,
         password: password,
       });
     }
   };
+
+  const login = async (userName, password) => {
+    try{
+      const response = axios.post(`https://localhost:44394/api/Authentication/api/Authentication/Login`,{
+          params:{
+            "username": userName,
+            "password": password
+          }
+      })
+      console.log("response", response);
+    } catch (error) {
+      console.log("login Error", error);
+    }
+  }
 
   return (
     <div className='main-container'>

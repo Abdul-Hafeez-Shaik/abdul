@@ -16,13 +16,13 @@ const AddToOrderModal = ({ selectedItems, handleAddToOrder }) => {
   return (
     <div className="modal">
       <h3>Select Product:</h3>
-      <select value={selectedProduct} onChange={handleProductChange}>
+      <select id='orderinp' value={selectedProduct} onChange={handleProductChange}>
         <option value="">Select a product</option>
         {selectedItems.map(item => (
-          <option key={item.id} value={item.id}>{item.name}</option>
+          <option key={item.id} value={item.id}>{item.details}</option>
         ))}
       </select>
-      <button onClick={handleConfirm}>Confirm</button>
+      <button id='orderbtn' onClick={handleConfirm}>Confirm to add</button>
     </div>
   );
 };

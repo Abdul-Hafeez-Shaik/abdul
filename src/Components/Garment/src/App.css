@@ -1,0 +1,163 @@
+
+#garment
+{
+  margin-left: 10px;
+
+}
+#garment1
+{
+  display: flex;
+}
+#row3
+{
+    margin-left: 10px;
+    margin-top: 10px;
+    display: flex;
+    width: 1900px;
+}
+#input1
+{
+    height: 60px;
+    width: 900px;
+    font-size: 20px;
+}
+#searchbtn
+{
+    height: 65px;
+    background-color: gray;
+    width: 95px;
+    border-radius: 10px 0px 0px 10px;
+}
+#quantity
+{
+  background-color: #f7f7f7;
+  height: 540px;
+  box-shadow: 0px 0px 0px 0px;
+}
+#mainbtn
+{
+  padding: 10px;
+  display: flex;
+  gap: 20px;
+  margin-left: 30px;
+}
+#allprod
+{
+  display: flex;
+}
+#prod
+{
+  display: flex;
+  flex-direction: column;
+  width: 1400px;
+  
+}
+#proddiv
+{
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  gap: 10px;
+}
+#itembox
+{
+  border: 1px solid black;
+  text-align: center;
+  
+}
+#selected
+{
+  width: 1880px;
+}
+#selected1
+{
+  gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
+#selectedbox
+{
+  border: 1px solid black;
+  text-align: center;
+  width: 350px;
+  padding: 5px;
+  display: flex;
+  gap: 20px;
+}
+#allprod-container {
+  height: 680px; /* Set the height of the container */
+  overflow-y: scroll; /* Enable vertical scrollbar */
+  overflow-x: hidden;
+  width: 1500px; /* Hide horizontal scrollbar */
+}
+
+#scrollbar {
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  overflow-y: scroll; /* Enable vertical scrollbar */
+  height: 100%;
+  scrollbar-width: thin; /* Adjust as needed */
+  scrollbar-color: #888888 #f1f1f1; /* Adjust as needed */
+}
+
+/* Define scrollbar styles */
+#scrollbar::-webkit-scrollbar {
+  width: 10px; /* Adjust as needed */
+}
+
+#scrollbar::-webkit-scrollbar-thumb {
+  background-color: #888888; /* Adjust as needed */
+  border-radius: 5px; /* Adjust as needed */
+}
+
+#scrollbar::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Adjust as needed */
+}
+#qty
+{
+  align-items: center;
+  text-align: center;
+  height: 400px;
+  margin-left: 40px;
+
+ 
+}
+#continue
+{
+  width: 300px;
+  background-color: rebeccapurple;
+  color: white;
+
+}
+#cancel
+{
+  width: 300px;
+  background-color:rgb(226, 36, 36) ;
+  color: white;
+
+}
+#incr,#decr
+{
+  height: 50px;
+  width: 60px;
+  background-color: green;
+  color: white;
+}
+#inp
+{
+  height: 50px;
+  width: 200px;
+  border-radius: 20px;
+  text-align: center;
+}
+#remove
+{
+  background-color:rgb(226, 36, 36) ;
+  color: white;
+
+}
+#inp1
+{
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 10px;
+}

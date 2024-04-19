@@ -1,0 +1,59 @@
+ #row
+ {
+    background-color: #f7f7f7;
+ }
+ 
+ #ul1
+{
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    
+  
+}
+#ul2
+{
+    list-style-type: none;
+    display: flex;
+   gap: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    
+    
+}
+#row3
+{
+    margin-left: 120px;
+    display: flex;
+}
+#input1
+{
+    height: 60px;
+    width: 900px;
+    font-size: 20px;
+}
+#searchbtn
+{
+    height: 65px;
+    background-color: gray;
+    width: 95px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+#button1
+{
+   width: 170px;
+   background-color: white;
+   margin-top: 10px;
+}
+#button1:hover
+{
+    background-color: #74848c;
+    color: white;
+}
+#ul2 li button.active {
+    color: #74848c;
+  }

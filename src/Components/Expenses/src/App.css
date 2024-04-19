@@ -1,0 +1,66 @@
+#inp
+{
+  height: 50px;
+  width: 600px;
+}
+#inp1
+{
+  width: 450px;
+  height: 50px;
+}
+#inp2
+{
+  height: 50px;
+  width: 610px;
+}
+.inp2
+{
+  height: 50px;
+  width: 630px;
+}
+#inp3
+{
+  height: 50px;
+  width: 640px;
+}
+.inp3
+{
+  height: 50px;
+  width: 640px;
+}
+.row1
+{
+  background-color: rgb(88, 88, 185);
+  height: 50px;
+  color: white;
+  border-radius: 10px 10px 0px 0px;
+  font-size: 25px;
+  
+}
+#form
+{
+   margin-top: 10px;
+   padding: 30px;
+}
+#main
+{
+  border: 1px solid rgb(88, 88, 185);
+  width: 1880px;
+  margin-left: 10px;
+  border-radius: 10px;
+}
+#text
+{
+  background-color: gray;
+  color: white;
+  height: 50px;
+  
+}
+#report
+{
+  border: 1px solid white;
+  box-shadow: 0px 0px 5px 0px;
+  margin-left: 10px;
+  width: 1880px;
+ 
+}

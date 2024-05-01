@@ -43,21 +43,22 @@ export default function SignIn() {
   const [password, setPassword] = React.useState('');
   const [showPassword, setShowPassword] = React.useState(false);
   const [formErrors, setFormErrors] = React.useState({});
+  const [jwtToken, setJwtTOken] = React.useState('');
 
   const handleSubmit = (event) => {
     event.preventDefault();
 
     const data = new FormData(event.currentTarget);
-    const email = data.get('userName');
+    const userName = data.get('userName');
     const password = data.get('password');
 
-    setUserName(email);
+    setUserName(userName);
     setPassword(password);
 
     const errors = {};
 
-    if (!email) {
-      errors.email = 'Email is required';
+    if (!userName) {
+      errors.userName = 'User name is required';
     }
     if (!password) {
       errors.password = 'Password is required';
@@ -69,21 +70,20 @@ export default function SignIn() {
       NotificationManager.success('Success', 'Login Success', 5000);
       login();
       console.log({
-        email: email,
+        userName: userName,
         password: password,
       });
     }
   };
 
   const login = async (userName, password) => {
-    try{
-      const response = axios.post(`https://localhost:44394/api/Authentication/api/Authentication/Login`,{
-          params:{
-            "username": userName,
-            "password": password
-          }
-      })
+    try {
+      const response = await axios.post(`https://localhost:44394/api/Authentication/api/Authentication/Login`, {
+        username: "abdul",
+        password: "Password@1"
+      });
       console.log("response", response);
+      setJwtTOken(response.data.token)
     } catch (error) {
       console.log("login Error", error);
     }

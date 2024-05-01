@@ -6,6 +6,7 @@ import 'react-phone-input-2/lib/material.css'
 import birthdayIcon from '../Assets/Images/birthday-cake.png'
 import '../Styles/AddCustomer.css'
 import Navbar from './NavBar';
+import axios from 'axios';
 
 
 function AddCustomer() {
@@ -21,6 +22,24 @@ function AddCustomer() {
   const [birthday, setBirthday] = useState('');
   const [preference, setPreference] = useState('');
   const [homeDelivery, setHomeDelivery] = useState('');
+
+  const addCustomer = async () => {
+    try {
+      const response = await axios.post(`https://localhost:44394/api/Customers/api/Authentication/AddCustomer`, {
+        salutation: value,
+        fullName: name,
+        address: address,
+        areaLocation: areaLocation,
+        state: state,
+        pincode: pincode,
+        mobileNumber: phoneNumber,
+        preference: preference,
+        homeDelivery: homeDelivery,
+      })
+    } catch (error) {
+      
+    }
+  }
 
   const onChangePhoneInput = (phoneNumber) => {
     setValue(phoneNumber)

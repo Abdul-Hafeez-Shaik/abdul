@@ -17,8 +17,11 @@ import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 import InputAdornment from '@mui/material/InputAdornment';
 import {NotificationContainer, NotificationManager} from 'react-notifications';
 import 'react-notifications/lib/notifications.css';
+import axios from 'axios'
 
 function Copyright(props) {
+  // const [jwtToken, setJwtToken] = React.useState("");
+
   return (
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
       {'Copyright © '}
@@ -29,6 +32,20 @@ function Copyright(props) {
       {'.'}
     </Typography>
   );
+}
+
+const signup = async (userName, password, email) => {
+  try {
+    const response = await axios.post(`https://localhost:44394/api/Authentication/api/Authentication/RegisterUserasSuperAdmin`, {
+      username: "abdul1",
+      password: "Password@1",
+      email: "hafeezJanu62@gmail.com"
+    });
+    console.log("response", response);
+    // setJwtToken(response.data.token)
+  } catch (error) {
+    console.log("login Error", error);
+  }
 }
 
 // TODO remove, this demo shouldn't need to reset the theme.
@@ -64,6 +81,7 @@ export default function SignUp() {
     
 
     setFormErrors(errors);
+    signup();
 
     if (Object.keys(errors).length === 0) {
       NotificationManager.success('Success', 'Login Success', 5000);
